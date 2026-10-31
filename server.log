@@ -1,0 +1,86 @@
+
+> fifth_project@1.0.0 dev
+> npx nodemon server.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (6) from .env
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+server is running on port 3000
+MongoDB is connected and ready
+MongoDB connected successfully
+Error connecting to email server: invalid_grant: Token has been expired or revoked.
+TIP: If using OAuth2, your REFRESH_TOKEN may be expired/revoked. Prefer EMAIL_PASS (App Password). See comments in email.service.js
+(node:12048) [MONGOOSE] Warning: mongoose: Duplicate schema index on {"user":1} for model "Account". This is often due to declaring an index using both "index: true" and "schema.index()". MongoDB will not create the duplicate index and options on the duplicate definition (such as expireAfterSeconds or unique) will not be applied. Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+MongoDB ping successful
+ValidationError: Ledger validation failed: idempotencyKey: Idempotency key is required, toAccount: Path `toAccount` is required., fromAccount: Path `fromAccount` is required.
+    at model.validate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\document.js:2930:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async model.$__save (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:399:7)
+    at async maybeTracedSave (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:676:7)
+    at async c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:2876:9
+    at async Promise.all (index 0)
+    at async model.create (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:2861:11)
+    at async createinitialFundsTransaction (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\src\controllers\transaction.controller.js:140:30) {
+  errors: {
+    idempotencyKey: ValidatorError: Idempotency key is required
+        at SchemaString.doValidate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\schemaType.js:1547:13)
+        at model.validate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\document.js:2908:20)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async model.$__save (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:399:7)
+        at async maybeTracedSave (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:676:7) {
+      properties: [Object],
+      kind: 'required',
+      path: 'idempotencyKey',
+      value: undefined,
+      reason: undefined,
+      Symbol(mongoose#validatorError): true
+    },
+    toAccount: ValidatorError: Path `toAccount` is required.
+        at SchemaObjectId.doValidate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\schemaType.js:1547:13)
+        at model.validate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\document.js:2908:20)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async model.$__save (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:399:7)
+        at async maybeTracedSave (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:676:7) {
+      properties: [Object],
+      kind: 'required',
+      path: 'toAccount',
+      value: undefined,
+      reason: undefined,
+      Symbol(mongoose#validatorError): true
+    },
+    fromAccount: ValidatorError: Path `fromAccount` is required.
+        at SchemaObjectId.doValidate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\schemaType.js:1547:13)
+        at model.validate (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\document.js:2908:20)
+        at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+        at async model.$__save (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:399:7)
+        at async maybeTracedSave (c:\Users\lenovo\OneDrive\Desktop\fsdyoutube\Backend\fifth_project\node_modules\mongoose\lib\model.js:676:7) {
+      properties: [Object],
+      kind: 'required',
+      path: 'fromAccount',
+      value: undefined,
+      reason: undefined,
+      Symbol(mongoose#validatorError): true
+    }
+  },
+  _message: 'Ledger validation failed'
+}
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+◇ injected env (6) from .env
+◇ injected env (0) from .env
+◇ injected env (0) from .env
+server is running on port 3000
+MongoDB is connected and ready
+MongoDB connected successfully
+Error connecting to email server: invalid_grant: Token has been expired or revoked.
+TIP: If using OAuth2, your REFRESH_TOKEN may be expired/revoked. Prefer EMAIL_PASS (App Password). See comments in email.service.js
+(node:22964) [MONGOOSE] Warning: mongoose: Duplicate schema index on {"user":1} for model "Account". This is often due to declaring an index using both "index: true" and "schema.index()". MongoDB will not create the duplicate index and options on the duplicate definition (such as expireAfterSeconds or unique) will not be applied. Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+MongoDB ping successful
